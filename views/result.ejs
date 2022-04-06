@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sentiment analysis result</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <%for(let i = 0; i < result.length; i++){%>
+    <h1>Overall sentiment: <%=result[i].sentiment%></h1>
+    <h1>Confidence Scores: </h1>
+      <h1 style="font-weight:300; color:rgb(47, 128, 0)"> Positive : <%=result[i].confidenceScores.positive%>%></h1>
+      <h1 style="font-weight:300; color:rgb(0, 19, 128)">  Neutral : <%=result[i].confidenceScores.neutral%>%></h1>
+      <h1 style="font-weight:300; color:rgb(128, 0, 11)"> Negative : <%=result[i].confidenceScores.negative%>%></h1>
+
+    <% }%>
+  </body>
+</html>
