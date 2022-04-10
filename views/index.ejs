@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sentiment Analysis</title>
-    <meta charset="utf-8" />
-    <style>
-      .wrapper {
-          padding: 5px;
-          margin: 15px 0;
-          background-color: #0f9d58;
-      }
 
-      textarea {
-          font-size: 20px;
-          width: 100%;
-      }
+<head>
+  <title>Sentiment Analysis</title>
+  <meta charset="utf-8" />
+  <style>
+    .wrapper {
+      padding: 5px;
+      margin: 15px 0;
+      background-color: #337ab7;
+    }
+
+    textarea {
+      font-size: 20px;
+      width: 100%;
+    }
   </style>
-      <link rel="stylesheet" href="bootstrap.css" />
-  </head><div id="content"  class="container body-content">
+  <link rel="stylesheet" href="bootstrap.css" />
+</head>
+<div id="content" class="container body-content">
+
   <body>
     <div class="container body-content">
-    <div class="container">
-      <div class="py-5 text-center"></div>
-      <h2>Analyze Tweet Sentiment </h2>
-      <p class="lead">The Text Analytics API's Sentiment Analysis feature is used to analyze the tweets by influencers.</p>
-  </div>
+      <div class="container">
+        <div class="py-5 text-center"></div>
+        <h2>Analyze Tweet Sentiment </h2>
+        <p class="lead">The Text Analytics API's Sentiment Analysis feature is used to analyze the tweets by
+          influencers.</p>
+      </div>
 
-  <div class="container">
-      <h4>Enter Tweet  Here</h4>
-  </div>
-  <form action="/" method="POST">
-  <div class="container">
-  
-    <div class="wrapper">
-      <input type="textarea" style="display: inline-block;width:100%;padding: 0 0 200px 0;" name="sendText" />
-    </div><br>
-     <div class="row">
-        <div class="col-md-4">
-            <div class="py-5 text-center"></div>
-            <div class="form-group">
-              <input type="submit" class="btn btn-primary" value="Analyze" />
+      <div class="container">
+        <h4>Enter Tweet Here</h4>
+      </div>
+      <form action="/" method="POST">
+        <div class="container">
+
+          <div class="wrapper">
+            <input type="textarea" style="display: inline-block;width:100%;padding: 0 0 200px 0;" name="sendText" />
+          </div><br>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="py-5 text-center"></div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Analyze" />
+              </div>
             </div>
+          </div>
+
         </div>
+      </form>
+
     </div>
-  
-</div>  
-</form> 
-    
-  </div>
-  
+
   </body>
-  </div>
+</div>
+
 </html>
