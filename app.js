@@ -54,10 +54,11 @@ app.post("/", async (req, res) => {
         console.error(`  Error: ${result.error}`);
       }
     }
-    res.render("result.ejs", { result: results});
+    res.render("result.ejs", { result: results });
   } catch (err) {
     console.log(err);
   }
 });
+
 
 app.listen(process.env.PORT || 8000);
